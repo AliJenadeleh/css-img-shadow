@@ -1,0 +1,23 @@
+.img-shadow{
+    margin-right: 50px;
+    position: relative;
+}
+
+.img-shadow::before{
+    content:' ';
+    height: 100%;
+    width:100%;
+    background-color: #aaa;
+    position: absolute;
+    border-radius: 5%;
+    border-width: 1px;
+    border-style: dashed;
+    border-color:#111;
+}
+
+.img-shadow::after{
+    content: attr(alt);
+    position: absolute;
+    top:50px;
+    left:50px;
+}
